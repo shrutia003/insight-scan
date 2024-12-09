@@ -5,12 +5,13 @@ Steps to run the project and generate sentiment analysis data -
 
 - Clone this repository.
 
-- Run the following commands in your terminal.
+- Run the following commands in your terminal:
     - Install the required dependencies. 
-        - pip install -r requirements.txt
+        - ```pip install -r requirements.txt```
     - Run the sentiment analysis script.
-        - python src\sentiment_analysis.py
+        - ```python src\sentiment_analysis.py```
         - Enter the app you want to search for reviews. Examples - Chess, Duolingo, LinkedIn, Spotify, etc.
+        - The script will take 1.5-2 minutes to run and generate all the output files.
 
 **Generated Outputs**
 - CSV file with web-scraped user reviews for the user-specified application.
