@@ -63,11 +63,7 @@ def search_and_scrape_reviews(app_name, max_scrolls=20):
             reviews_button = WebDriverWait(driver, 15).until(
                 EC.presence_of_element_located((By.XPATH, '//span[text()="See all reviews"]'))
             )
-            print("Found 'See all reviews' button.")
-            print(f"Is Displayed: {reviews_button.is_displayed()}")
-            print(f"Is Enabled: {reviews_button.is_enabled()}")
             driver.execute_script("arguments[0].scrollIntoView(true);", reviews_button)
-            print("Scrolled to the 'See all reviews' button.")
             time.sleep(2)
             driver.execute_script("arguments[0].click();", reviews_button)
             print("Clicked on the 'See all reviews' button successfully!")
