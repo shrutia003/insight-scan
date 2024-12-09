@@ -1,21 +1,18 @@
 # insight-scan
-### 1. Set Up Environment
-Ensure you have Python installed and set up a virtual environment for dependency management.
-Install libraries you'll need:
-bash
-Copy code
-pip install requests beautifulsoup4 selenium pandas scikit-learn nltk
+Steps to run the project and generate sentiment analysis data - 
 
-### 2. Automate Comment Extraction
-GitHub: Use the GitHub API to pull issue comments, filtering by repository or issue type if needed.
-Google Play Store and Apple App Store:
-Use scraping libraries like Selenium to automate data extraction from these platforms, as official APIs might limit or lack reviews.
-Data Storage: Store comments in a structured format (like a DataFrame) for easy manipulation during analysis.
+- Be sure to have an updated python version. (3.8 or later)
 
-### 3. Summarization with NLP
-Apply basic NLP techniques to identify recurring themes in comments.
-Use libraries such as nltk or spacy for preprocessing (e.g., tokenization, stop-word removal).
-Consider using a simple algorithm (e.g., clustering similar comments) to group related feedback.
+- Clone this repository.
 
-### 4. Set Up Initial Evaluation
-For summarization, create a simple evaluation method (e.g., checking theme accuracy manually on a sample of comments).
+- Run the following commands in your terminal.
+    - Install the required dependencies. 
+        - pip install -r requirements.txt
+    - Run the sentiment analysis script.
+        - python src\sentiment_analysis.py
+        - Enter the app you want to search for reviews. Examples - Chess, Duolingo, LinkedIn, Spotify, etc.
+
+**Generated Outputs**
+- CSV file with web-scraped user reviews for the user-specified application.
+- CSV file containing sentiment analysis results, which can be used by developers to filter out good and bad reviews.
+- .txt file with detailed evaluation metrics for the sentiment analysis model, such as accuracy, precision, recall, and F1-score.
