@@ -1,0 +1,20 @@
+Sentiment Analysis Model Evaluation
+========================================
+Accuracy: 0.75
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    negative       0.67      1.00      0.80         2
+     neutral       0.00      0.00      0.00         1
+    positive       1.00      1.00      1.00         1
+
+    accuracy                           0.75         4
+   macro avg       0.56      0.67      0.60         4
+weighted avg       0.58      0.75      0.65         4
+
+
+Confusion Matrix:
+[[2 0 0]
+ [1 0 0]
+ [0 0 1]]
